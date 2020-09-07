@@ -344,7 +344,7 @@
 
     #member .saving__right {
         padding: 40px 40px 50px 40px;
-        left: 0;
+        left: -14px;
     }
 
     #member .saving__button {
@@ -359,7 +359,7 @@
     }
 
     #member .saving__item li {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
@@ -442,7 +442,13 @@
     }
 
     #member .saving__left {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+    }
+
+    #member .saving__right {
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -469,7 +475,7 @@
     }
 
     #member .member__saving {
-        padding: 30px 20px;
+        padding: 40px 20px;
     }
 
     #member .member__tit {
@@ -483,7 +489,7 @@
 
     #member .saving__one li,
     #member .saving__two li {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 19px;
 
     }
@@ -510,5 +516,11 @@
         padding: 5px 25px;
         bottom: -20px;
         font-size: 20px;
+    }
+
+    #member .saving__right {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 }
