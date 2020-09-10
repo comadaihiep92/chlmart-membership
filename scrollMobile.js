@@ -16,4 +16,14 @@ $(window).scroll(function (event) {
         console.log('down')
     }
     lastScrollTop = st;
+
+    // function clickToSearch() {
+    //     console.log('search')
+    // }
+    $('#searchMobile').click(function (e) {
+        e.preventDefault(); /*your_code_here;*/
+        console.log('search')
+        $("#search_input").focus();
+        return false;
+    });
 });
