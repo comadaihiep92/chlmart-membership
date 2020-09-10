@@ -524,3 +524,93 @@
         border-bottom-right-radius: 30px;
     }
 }
+
+#menu-mobile {
+    display: none;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 999;
+    -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+
+    & .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+
+        &__item {
+            width: 20%;
+
+            & .active {
+                & span {
+                    color: #379424;
+                }
+
+                & path {
+                    fill: #379424;
+                }
+
+            }
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 8px;
+            text-decoration: none;
+
+            & span {
+                color: #757575;
+                font-size: 12px;
+                line-height: 14px;
+                font-family: MuseoSansBlack, Arial, sans-serif;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            &:hover span {
+                color: #379424;
+
+            }
+
+            &:hover path {
+                fill: #379424;
+            }
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+
+            & svg {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+
+
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px) 
+@media (max-width: 575.98px) {
+    #menu-mobile {
+        display: block
+    }
+}
