@@ -450,6 +450,10 @@
   background-position: center center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 575.98px) {
   #menu-mobile {
     display: block;

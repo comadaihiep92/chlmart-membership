@@ -24,6 +24,24 @@ $(window).scroll(function (event) {
         e.preventDefault(); /*your_code_here;*/
         console.log('search')
         $("#search_input").focus();
+
         return false;
-    });
+    })
+
+
+
+});
+$(document).ready(function () {
+    console.log($("#product_detail_page"))
+    let menu = $("#product_detail_page");
+    if (menu.is(menu)) {
+        console.log("menu:", menu, "ismenu: ", menu.is(menu))
+        $('#menu-mobile').css({
+            "display": "none"
+        });
+        console.log('have')
+    } else {
+        console.log('dont have ')
+    }
+
 });
