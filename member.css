@@ -449,6 +449,9 @@
   background-size: 100%;
   background-position: center center;
 }
+#menu-mobile svg path {
+  fill: #757575;
+}
 
 html {
   scroll-behavior: smooth;
