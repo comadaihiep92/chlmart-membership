@@ -9,5 +9,6 @@
     "compile-hero.less-output-toggle": false,
     "compile-hero.sass-output-toggle": false,
     "compile-hero.typescript-output-toggle": false,
-    "compile-hero.typescriptx-output-toggle": false
+    "compile-hero.typescriptx-output-toggle": false,
+    "liveServer.settings.port": 5501
 }
